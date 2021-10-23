@@ -37,9 +37,11 @@ class FibbonacciSolution:
         return [self.current_fib_index(x) for x in range(0, n)]
 
     def previous_fib(self, n: int, p: int) -> float:
+        # Equation 2
         return self.current_fib_index(p) * (math.pow(self.GOLDEN_RATIO, n - p))
 
     def next_fib(self, n: int) -> float:
+        # Equation 3
         return self.current_fib_index(n+1) * self.GOLDEN_RATIO
 
     def user_fib(self, n: int):

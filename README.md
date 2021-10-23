@@ -1,6 +1,6 @@
 # FibblyWhibbly
 
-Fibonacci sequence program for CS 335 
+Fibonacci sequence and largest sum subarray program for CS 335.
 
 # NOTE
 
@@ -10,9 +10,10 @@ If running under Linux, please use the following command sequence to properly te
 ```bash
 python3 -m venv virtual
 source virtual/bin/activate
-pip install tabulate
-python3 fib_recurse.py
-python3 largest_sum.py
+pip3 install tabulate # change to pip if not using Ubuntu, this program was written in Arch Linux (btw)
+python3 main.py
 deactivate
 rm -rf virtual
 ```
+
+The program will be menu based and each test that needs to be conducted will run when given the proper number.
